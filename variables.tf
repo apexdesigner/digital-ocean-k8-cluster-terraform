@@ -18,3 +18,9 @@ variable letsencrypt_email {
   description = "The email address that will be used when setting up letsencrypt (enter your email)."
   type = string
 }
+
+variable postgres_node_size {
+  description = "The node size for the PostgreSQL cluster"
+  type = string
+  default = "db-s-1vcpu-1gb"
+}
