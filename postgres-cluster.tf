@@ -1,7 +1,7 @@
 resource "digitalocean_database_cluster" "postgres_cluster" {
   name       = replace(var.domain,".","-")
   engine     = "pg"
-  version    = "14"
+  version    = "16"
   size       = var.postgres_node_size
   region     =  lower(var.region)
   node_count = 1
